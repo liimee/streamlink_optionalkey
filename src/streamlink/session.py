@@ -82,6 +82,7 @@ class Streamlink:
             "stream-timeout": 60.0,
             "ffmpeg-ffmpeg": None,
             "ffmpeg-fout": None,
+            "ffmpeg-dkey": None,
             "ffmpeg-video-transcode": None,
             "ffmpeg-audio-transcode": None,
             "ffmpeg-copyts": False,
@@ -185,6 +186,8 @@ class Streamlink:
         ffmpeg-audio-transcode   (str) The codec to use if transcoding
                                  audio when muxing with ffmpeg
                                  e.g. ``aac``
+
+        ffmpeg-dkey              (str) Specify decryption key
 
         ffmpeg-copyts            (bool) When used with ffmpeg, do not shift input timestamps.
 
